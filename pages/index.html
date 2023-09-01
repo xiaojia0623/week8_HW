@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/head'); -%>
+    <title>首頁</title>
+  </head>
+  <body>
+    
+    <!-- navbar -->
+    <%- include('./layout/header'); -%>
+    
+    <!-- banner -->
+    <div class="banner">
+      <div class="container-fluid">
+        <div class="imgContent">
+          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true" alt="circle-icon">
+          <p>ALPHABOX+ STUDIO</p>
+        </div>
+
+        <!-- 四張卡片 -->
+        <div class="fourCard">
+          <div>
+            <p class="top-text d-none d-lg-block">最新消息！新版本 v15.4 釋出，搶先體驗！</p>
+            <div class="mobile-text d-block d-lg-none mx-auto">
+              <p class="mobile-title text-white text-center">ALPHABOX+</p>
+              <p class="mobile-content text-white mx-auto">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
+            <div class="card mb-3 mb-lg-0"  style="max-width:316px;">
+              <div class="card-diane active">
+                <img class="d-none d-lg-block" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true" alt="pc-Diane">
+                <img class="d-block d-lg-none" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true" alt="mobile-Diane" style="height: 351px;">
+                <p class="card-text text-center text-white">Diane</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="middleCard-section ms-lg-5">
+          <p class="middle-text d-none d-lg-block">ALPHABOX+</p>
+          <p class="bottom-text d-none d-lg-block">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+          <div class="middle-card">
+            <div>
+              <div class="card-felix mb-3 mb-lg-0"  style="max-width:316px;">
+                <img class="d-none d-lg-block" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true" alt="pc-Felix">
+                <img class="d-block d-lg-none" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true" alt="mobile-Felix">
+                <p class="card-text text-center text-white">Felix</p>
+              </div>
+            </div>
+            <div class="ms-lg-4">
+              <div class="card-karina mb-3 mb-lg-0"   style="max-width:316px;">
+                <img class="d-none d-lg-block" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true" alt="pc-karina">
+                <img class="d-block d-lg-none" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true" alt="mobile-karina">
+                <p class="card-text text-center text-white">Karina</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          <div>
+            <p class="vito-text d-none d-lg-block">Copyright © 2023 Hexschool.</p>
+            <div class="lastestCard" style="max-width:316px;">
+              <div class="card-vito">
+                <img class="d-none d-lg-block" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true" alt="pc-vito">
+                <img class="d-block d-lg-none" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square1.png?raw=true" alt="mobile-vito">
+                <p class="card-text text-center text-white">Vito</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 首頁中間區域 > 什麼是 ALPHABOX+  -->
+    <div class="skill">
+      <div class="secondImg">
+        <div class="container">
+          <div class="top-purpleLine"></div>
+          <h2>什麼是<br>ALPHABOX+</h2>
+          <hr>
+          <div class="skill-content">
+            <img class="left d-none d-lg-block" src="/assets/images/line_start_arrow_notch.png" alt="左箭頭">
+            <div class="imgcontent">
+              <div class="word">
+                <h2>01</h2>
+                <p>立體投影技術</p>
+                <p class="smWord">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+              </div>
+            </div>
+            <img class="right d-none d-lg-block" src="/assets/images/line_end_arrow_notch.png" alt="右箭頭">
+          </div>
+          <div class="bottom-purpleLine"></div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- 首頁 最新消息  -->
+    <div class="homeNews">
+      <div class="container">
+        <h3>最新消息</h3>
+        <table class="table d-none d-lg-block">
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <div class="iconDate">
+                  <span class="material-symbols-outlined">emergency</span>
+                  <p>2023.06.30</p>
+                </div>
+                <p class="ft-title">產品升級公告</p>
+                <div class="ft-content">
+                  <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包
+                    括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。<br>歡
+                    迎您了解本次升級帶來的更為卓越的性能！
+                  </p>
+                  <img src="/assets/images/line_end_arrow_notch.png" alt="">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-end">
+                <div class="iconDate">
+                  <span class="material-symbols-outlined">emergency</span>
+                  <p>2023.06.30</p>
+                </div>
+                <p class="ft-title">限時優惠活動</p>
+                <div class="sb-content">
+                  <p>為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆<br>可享受九折優惠。機會難得，請勿錯過此良機！
+                  </p>
+                  <img src="/assets/images/line_end_arrow_notch.png" alt="">
+                </div>
+              </td>
+              <td>
+                <div class="iconDate">
+                  <span class="material-symbols-outlined">emergency</span>
+                  <p>2023.04.18</p>
+                </div>
+                <p class="ft-title">新功能上線</p>
+                <div class="sb-content">
+                  <p>為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家<br>居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
+                  </p>
+                  <img src="/assets/images/line_end_arrow_notch.png" alt="">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- 首頁 moblie可見 最新消息  -->
+        <ul class="moblie-list d-block d-lg-none list-unstyled">
+          <li class="list">
+            <div class="iconDate">
+              <span class="material-symbols-outlined me-2">emergency</span>
+              <p>2023.06.30</p>
+            </div>
+            <p class="ft-title">產品升級公告</p>
+            <div class="ft-content">
+              <p>榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包
+                括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡
+                迎您了解本次升級帶來的更為卓越的性能！
+              </p>
+              <img src="/assets/images/line_end_arrow_notch.png" alt="">
+            </div>
+          </li>
+          <li class="list">
+            <div class="iconDate">
+              <span class="material-symbols-outlined me-2">emergency</span>
+              <p>2023.06.30</p>
+            </div>
+            <p class="ft-title">限時優惠活動</p>
+            <div class="sb-content">
+              <p>為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！
+              </p>
+              <img src="/assets/images/line_end_arrow_notch.png" alt="">
+            </div>
+          </li>
+          <li class="list mb-5">
+            <div class="iconDate">
+              <span class="material-symbols-outlined me-2">emergency</span>
+              <p>2023.04.18</p>
+            </div>
+            <p class="ft-title">新功能上線</p>
+            <div class="sb-content">
+              <p>為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
+              </p>
+              <img src="/assets/images/line_end_arrow_notch.png" alt="">
+            </div>
+          </li>
+        </ul>
+        <div class="circleMore">
+          <img src="/assets/images/Group 2.png" alt="查看更多">
+        </div>
+        <p class="moreWord d-none d-lg-block">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+      </div>
+    </div>
+
+
+    <!-- 首頁 使用者分享  -->
+    <div class="userShare">
+      <div class="container">
+        <div class="d-lg-flex text-start align-center">
+          <div class="user-title flex-column">
+            <h3 class="mb-3 me-0">使用分享</h3>
+            <p class="text-white text-start">01 - 04</p>
+          </div>
+          <p class="text-white ms-auto">展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+        </div>
+        
+        <span class="material-symbols-outlined me-2 mb-3">emergency</span>
+
+        <!-- 使用者分享 卡片滑動區  -->
+        <div class="swiper-container mb-5 d-none d-lg-block">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide card-bg-color">
+                <div class="swiperContent fw-bold">
+                  <h3>Zone<span class="material-symbols-outlined text-white fs-8 align-self-center">fiber_manual_record</span>Taipei</h3>
+                  <p>ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。</p>
+                </div>
+                <div class="swiperBottom">
+                  <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <p>ALPHABOX+ Dianne</p>
+                </div>
+              </div>
+              <div class="swiper-slide bg-white">
+                <div class="swiperContent text-dark fw-bold">
+                  <h3>Lin<span class="material-symbols-outlined text-dark fs-8 align-self-center">fiber_manual_record</span>Chiayi</h3>
+                  <p>非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。</p>
+                </div>
+                <div class="swiperBottom text-dark">
+                  <span class="material-symbols-outlined text-dark">fiber_manual_record</span>
+                  <span class="material-symbols-outlined text-dark">fiber_manual_record</span>
+                  <p>ALPHABOX+ Felix</p>
+                </div>
+              </div>
+              <div class="swiper-slide card-bg-color">
+                <div class="swiperContent">
+                  <h3>云<span class="material-symbols-outlined text-white fs-8 align-self-center">fiber_manual_record</span>Taipei</h3>
+                  <p>我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！</p>
+                </div>
+                <div class="swiperBottom">
+                  <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <p>ALPHABOX+ Dianne</p>
+                </div>
+              </div>
+              <div class="swiper-slide bg-white">
+                <div class="swiperContent text-dark fw-bold">
+                  <h3>Zichi<span class="material-symbols-outlined text-dark fs-8 align-self-center">fiber_manual_record</span>Kaohsiung</h3>
+                  <p>讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！</p>
+                </div>
+                <div class="swiperBottom text-dark">
+                  <span class="material-symbols-outlined text-dark">fiber_manual_record</span>
+                  <span class="material-symbols-outlined text-dark">fiber_manual_record</span>
+                  <p>ALPHABOX+ Vito</p>
+                </div>
+              </div>
+            </div>
+            <!-- Scrollbar -->
+            <div class="row align-items-center mt-5">
+              <div class="col-8">
+                <!-- 加上 position-static 將滾動條的絕對定位設定覆蓋 -->
+                <div class="swiper-scrollbar position-static"></div>
+              </div>
+              <div class="col-1">
+                <p class="mb-0 text-white">SCROLL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- 首頁 moblie 使用者分享  -->
+        <div class="d-block d-lg-none">
+          <ul class="moblieList mb-5">
+            <li class="mlist card-bg-color mb-3">
+              <div class="list-header">
+                <h3>Zone<span class="material-symbols-outlined wspot">fiber_manual_record</span>Taipei</h3>
+              </div>
+              <div class="list-content text-white">
+                <p>
+                  ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                </p>
+              </div>
+              <div class="list-footer  text-white">
+                <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <p>ALPHABOX+ Dianne</p>
+              </div>
+            </li>
+            <li class="mlist bg-white mb-3">
+              <div class="list-header  text-dark">
+                <h3>Lin<span class="material-symbols-outlined wspot text-dark">fiber_manual_record</span>Chiayi</h3>
+              </div>
+              <div class="list-content text-dark">
+                <p>
+                  非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                </p>
+              </div>
+              <div class="list-footer  text-dark">
+                  <span class="material-symbols-outlined  text-dark">fiber_manual_record</span>
+                  <span class="material-symbols-outlined  text-dark">fiber_manual_record</span>
+                  <p>ALPHABOX+ Felix</p>
+              </div>
+            </li>
+            <li class="mlist card-bg-color mb-3">
+              <div class="list-header">
+                <h3>云<span class="material-symbols-outlined wspot">fiber_manual_record</span>Taipei</h3>
+              </div>
+              <div class="list-content text-white">
+                <p>
+                  我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見 ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+                </p>
+              </div>
+              <div class="list-footer  text-white">
+                <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <span class="material-symbols-outlined">fiber_manual_record</span>
+                  <p>ALPHABOX+ Dianne</p>
+              </div>
+            </li>
+            <li class="mlist bg-white">
+              <div class="list-header  text-dark">
+                <h3>Zichi<span class="material-symbols-outlined wspot text-dark">fiber_manual_record</span>Kaohsiung</h3>
+              </div>
+              <div class="list-content text-dark">
+                <p>
+                  讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                </p>
+              </div>
+              <div class="list-footer text-dark">
+                  <span class="material-symbols-outlined  text-dark">fiber_manual_record</span>
+                  <span class="material-symbols-outlined  text-dark">fiber_manual_record</span>
+                  <p>ALPHABOX+ Vito</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="swiperBottomWord">
+          <div class="background-word">
+            <p>ALPHABOX+</p>
+          </div>
+          <p class="d-none d-lg-block">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- 首頁 聯絡我們  -->
+    <div class="hcontact">
+      <div class="container">
+        <div class="infoTitle">
+          <h4>聯絡我們</h4>
+          <div class="spot-icons d-flex mb-4 mb-lg-5">
+            <span class="material-symbols-outlined contIcon">fiber_manual_record</span>
+            <span class="whiteLine"></span>
+          </div>
+          <p class="text-white lh-lg fw-bold">讓科技成為您的最佳夥伴<br>立即體驗神奇功能並享限時優惠！</p>
+        </div>
+        <div class="userInfo">
+          <span class="material-symbols-outlined infoIcon">emergency</span>
+          <div class="py-3">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInputValue" placeholder="Email">
+              <label for="floatingInputValue">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+              <label for="floatingTextarea">Comments</label>
+            </div>
+            <div class="col-6 form-btn">
+              <a href="#" class="col-6 fbtn btn-primary d-flex text-center">
+                <span class="material-symbols-outlined">point_scan</span>
+                <p class="m-0">送出</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 首頁 四張hover人物卡片 -->
+    <div class="blackCards">
+      <ol class="list-unstyled d-flex">
+        <li class="col-6 col-lg-3">
+          <a href="#" class="dianeBlack border-0 rounded-0">
+            <h4 class="font-Shrikhand italic text-white d-flex flex-column align-items-center fs-24 fs-md-32 mb-18 mb-md-80">
+              <span class="font-Saira fs-m fs-md-l fw-light mb-16 mb-md-20">1</span>
+              Diane
+            </h4>
+            <div class="d-flex flex-column flex-xl-row align-items-xl-end justify-content-between">
+              <div class="text-white">
+                <h5 class="h6 fw-bold mb-0">知識型</h5>
+                <p class="mb-0">學術領導/知識分享/智能問答</p>
+              </div>
+              <img src="https://hackmd.io/_uploads/ByjLe2_3h.png" alt="arrow" class="img-fluid">
+            </div>
+          </a>
+        </li>
+        <li class="col-6 col-lg-3">
+          <a href="#" class="felixBlack border-0 rounded-0">
+            <h4 class="font-Shrikhand italic text-white d-flex flex-column align-items-center fs-24 fs-md-32 mb-18 mb-md-80">
+              <span class="font-Saira fs-m fs-md-l fw-light mb-16 mb-md-20">2</span>
+              Felix
+            </h4>
+            <div class="d-flex flex-column flex-xl-row align-items-xl-end justify-content-between">
+              <div class="text-white">
+                <h5 class="h6 fw-bold mb-0">娛樂型</h5>
+                <p class="mb-0">音樂播放/語音互動/遊戲陪伴</p>
+              </div>
+              <img src="https://hackmd.io/_uploads/ByjLe2_3h.png" alt="arrow" class="img-fluid">
+            </div>
+          </a>
+        </li>
+        <li class="col-6 col-lg-3">
+          <a href="#" class="karinaBlack border-0 rounded-0">
+            <h4 class="font-Shrikhand italic text-white d-flex flex-column align-items-center fs-24 fs-md-32 mb-18 mb-md-80">
+              <span class="font-Saira fs-m fs-md-l fw-light mb-16 mb-md-20">3</span>
+              Karina
+            </h4>
+            <div class="d-flex flex-column flex-xl-row align-items-xl-end justify-content-between">
+              <div class="text-white">
+                <h5 class="h6 fw-bold mb-0">生活型</h5>
+                <p class="mb-0">健康提醒/日程安排/智能家居</p>
+              </div>
+              <img src="https://hackmd.io/_uploads/ByjLe2_3h.png" alt="arrow" class="img-fluid">
+            </div>
+          </a>
+        </li>
+        <li class="col-6 col-lg-3">
+          <a href="#" class="VitoBlack border-0 rounded-0">
+            <h4 class="font-Shrikhand italic text-white d-flex flex-column align-items-center fs-24 fs-md-32 mb-18 mb-md-80">
+              <span class="font-Saira fs-m fs-md-l fw-light mb-16 mb-md-20">4</span>
+              Vito
+            </h4>
+            <div class="d-flex flex-column flex-xl-row align-items-xl-end justify-content-between">
+              <div class="text-white">
+                <h5 class="h6 fw-bold mb-0">情感型</h5>
+                <p class="mb-0">情感識別/心情分析/心靈支持</p>
+              </div>
+              <img src="https://hackmd.io/_uploads/ByjLe2_3h.png" alt="arrow" class="img-fluid">
+            </div>
+          </a>
+        </li>
+      </ol>
+    </div>
+    
+
+    <!-- 首頁 表尾 -->
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

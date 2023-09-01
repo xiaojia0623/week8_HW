@@ -1,0 +1,90 @@
+
+
+a {
+    display: block;
+    text-decoration: none;
+}
+  
+.font-Shrikhand {
+    font-family: "Shrikhand", cursive;
+}
+  
+.font-Saira {
+    font-family: "Saira Extra Condensed", sans-serif;
+}
+
+.font-Noto {
+  font-family: "Noto Sans TC", sans-serif;
+}
+.fw-350{
+  font-weight: 350;
+}
+
+.fs-8{
+  font-size: 8px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+  
+.fs-md-32 {
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+}
+  
+.fs-m {
+    font-size: 128px;
+}
+  
+.fs-md-l {
+    @media (min-width: 768px) {
+      font-size: 400px;
+    }
+}
+  
+.mb-16 {
+    margin-bottom: 16px;
+}
+  
+.mb-18 {
+    margin-bottom: 18px;
+}
+  
+.mb-md-20 {
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+}
+  
+.mb-md-80 {
+    @media (min-width: 768px) {
+      margin-bottom: 80px;
+    }
+}
+
+
+.pill-btn-hover{
+    &:hover{
+      background-color: #ffffff;
+      color:#7000FF;
+    }
+    &.active{
+      background-color: #ffffff;
+      color:#000;
+    }
+}

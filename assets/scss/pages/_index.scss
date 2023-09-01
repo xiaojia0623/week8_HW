@@ -1,0 +1,808 @@
+
+//banner
+.banner{
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true);
+  background-position: center bottom;
+  background-size: cover;
+  height: 881px;
+  .container-fluid{
+    padding: 0 40px;
+  }
+  .imgContent{
+    padding-top: 57px;
+    display: flex;
+    margin-bottom: 0px;
+    img{
+      margin: 0 auto;
+      width: 196px; height: 196px;
+      margin-left: 40%;
+      animation: move 6s linear infinite;
+    }
+    p{
+      font-size: 16px;
+      font-family: 'Noto Sans CJK TC';
+      color:#ffffff;
+      border-top: 1px solid #ffffff;
+      width: 320px;
+      margin-left: auto;
+    }
+  }
+}
+
+@keyframes move{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@include iphone{
+  .banner{
+    height: 1846px;
+    .container-fluid{
+      padding: 0 20px;
+    }
+    .imgContent{
+      padding-top:28px;
+      flex-direction: column-reverse;
+      img{
+        margin: 20px auto;
+      }
+      p{
+        max-width: 100%;
+        margin:  0 ;
+        font-family: 'Noto Sans CJK TC';
+      }
+    }
+  }
+}
+
+//四張人物卡片
+.fourCard{
+  display:flex;
+  align-items:end;
+  justify-content: space-between;
+  .mobile-text{
+    display:none;
+  }
+}
+
+.top-text{
+  width:320px;
+  color:#ffffff;
+  border-bottom:1px solid #ffffff;
+  margin-bottom:50px;
+}
+.vito-text{
+  margin-bottom:50px;
+  color:#AD93CF;
+}
+
+.middle-card{
+  display:flex;
+}
+
+.middleCard-section{
+  text-align:center;
+  .middle-text{
+    font-family:'Shrikhand';
+    letter-spacing:55px;
+    font-size:32px;
+    font-weight:bold;
+    color:#ffffff;
+  }
+  .bottom-text{
+    font-family:'Noto Sans CJK TC';
+    font-weight:bold;
+    color:#ffffff;
+  }
+}
+.card-diane, 
+.card-felix,
+.card-karina,
+.card-vito{
+  font-family: 'Shrikhand';
+  font-size:32px;
+  font-style: italic;
+  font-weight: bold;
+  position:relative;
+  p{
+    position: absolute;
+    top:30px; left:35%;
+  }
+}
+.card-diane{
+  box-shadow: 0px 0px 16px 8px #8F00FFCC;
+}
+.card-diane, .card-vito{
+  img{
+    height:676px;width:320px;
+    object-fit: cover;
+  }
+}
+
+.card-felix, .card-karina{
+  img{
+    height:580px;width:320px;
+    object-fit: cover;
+  }
+}
+
+
+@include iphone{
+  .fourCard{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .mobile-title{
+    letter-spacing:15px;
+    font-weight:bold;
+    font-family:'Shrikhand';
+  }
+  .card-diane{
+    img{
+      width: 351px; height: 351px;
+      object-fit: cover;
+    }
+  }
+  .middleCard-section{
+    width: 100%;
+  }
+  .middle-card{
+    flex-direction: column;
+    .card-felix, .card-karina{
+      width: 100%;
+      img{
+        width: 351px; height: 351px;
+        object-fit: cover;
+      }
+    }
+  }
+  .card-vito{
+    width: 100%;
+    img{
+      width: 351px; height: 351px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+//首頁中間區域 > 什麼是 ALPHABOX+ 
+.skill{
+  background: linear-gradient(to right, #300871, #000000);
+  .secondImg{
+    background-image: url(/assets/images/carousel_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    //filter:blur(1px);
+    width: 848px;
+    height: 1080px;
+  }
+  .container{
+    position: relative;
+    padding: 0;
+  }
+  .top-purpleLine{
+    height: 40px;
+    background: linear-gradient(to right, #7000FF, #11002D);
+    width: 1375px;
+    border: 2px solid #fff;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 20%;
+  }
+  .bottom-purpleLine{
+    height: 40px;
+    width: 1375px;
+    border: 2px solid #fff;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 75%;
+    background: linear-gradient(to right,#11002D , #7000FF);
+  }
+  h2{
+    color:#ffffff;
+    font-size: 48px;
+    letter-spacing:40px;
+    padding-top: 30%;
+    padding-left: 30px;
+  }
+  hr{
+    opacity: 1;
+    width: 100%;
+    border:1px solid #ffffff;
+    padding: 0; margin: 0;
+    width: 1458px;
+  }
+}
+.skill-content{
+  position: absolute;
+  margin:  40px 45px;
+  display: flex;
+  justify-content: center;
+  .imgcontent{
+    background-image: url(/assets/images/carousel.png);
+    background-position: center;
+    background-size: cover;
+    margin: 0 16px;
+    width: 1296px; height: 560px;
+    text-align: end;
+    align-self: center;
+    padding-right: 20px;
+    .word{
+      text-align: end;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      float: right;
+    }
+    h2{
+      font-family: 'Shrikhand';
+      font-size: 96px;
+      font-style: italic;
+      font-weight: bold;
+    }
+    p{
+      font-size: 32px;
+      letter-spacing: 20px;
+      font-weight: bold;
+      color:#ffffff;
+    }
+    .smWord{
+      letter-spacing: 0px;
+      font-size: 16px;
+      font-weight: bold;
+      color:#ffffff;
+    }
+  }
+  .left, .right{
+    display: flex;
+    width: 180px; height: 28px;
+    object-fit: cover;
+    align-self: center;
+  }
+}
+
+@include iphone{
+  .skill{
+    .secondImg{
+      height: 617px; max-width: 100%;
+    }
+    .container{
+      padding: 0 12px;
+    }
+    .top-purpleLine{
+      margin: 0; padding: 0;
+      position: absolute;
+      top: 20px;
+      max-width: 255px;
+      height: 40px;
+    }
+    .bottom-purpleLine{
+      margin: 0; padding: 0;
+      position: absolute;
+      top: 540px;
+      max-width: 255px;
+      height: 40px;
+    }
+    h2{
+      font-size: 24px;
+      letter-spacing: 15px;
+      padding-top: 30%;
+      padding-left: 0;
+    }
+    hr{
+      margin: 1rem 0;
+      padding: 0;
+      max-width: 100%;
+    }
+    .skill-content{
+      margin: 0; padding: 0;
+    }
+    .imgcontent{
+      background-image: url(/assets/images/carousel_mobile.png);
+      background-position: center center;
+      background-size: cover;
+      object-fit: cover;
+      max-width: 276px; height: 343px;
+      margin: 0;
+      .word{
+        text-align: left;
+        padding-top: 83px;
+        padding-left: 15px;
+      }
+      h2{
+        font-size: 64px;
+      }
+      p{
+        font-size: 24px;
+        letter-spacing: 12px;
+      }
+      .smWord{
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+//首頁 最新消息
+.homeNews{
+  padding:80px 0 20px 0px;
+  background: radial-gradient(circle closest-side at center, #28085C, #000000);
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+  }
+  h3{
+    color:#ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 30px;
+    margin-bottom: 20px;
+  }
+  .table{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 80px;
+    tbody{
+      td{
+        padding:20px 10px;
+      }
+      .iconDate{
+        display: flex;
+        span{
+          width: 24px;height: 24px;
+          color:#ffffff;
+          margin-right: 15px;
+        }
+        p{
+          color:#ffffff;
+          font-weight: bold;
+          letter-spacing: 15px;
+        }
+      }
+      .ft-title{
+        color:#ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 20px;
+      }
+      .ft-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        p{
+          color:#ffffff;
+          font-weight: bold;
+          max-width: 100%;
+        }
+        img{
+          width: 192px;height: 14px;
+          object-fit: cover;
+        }
+      }
+      .sb-content{
+        p{
+          color:#ffffff;
+          font-weight: bold;
+        }
+        img{
+          width: 86px;height: 14px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .circleMore{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 132px;height: 132px;
+      object-fit: cover;
+    }
+  }
+  .moreWord{
+    color:#ffffff;
+    text-align: end;
+  }
+}
+
+@include iphone{
+  .homeNews{
+    padding: 50px 0px 20px 0;
+    h3{
+      display: block;
+      font-size: 40px;
+      margin-left: 20px;
+      letter-spacing: 20px;
+    }
+    .moblie-list{
+      padding:10px 12px;
+      .list{
+        padding:10px 8px;
+        border-top:1px solid #ffffff;
+        border-bottom:1px solid #ffffff;
+      }
+      .iconDate{
+        display: flex;
+        span{
+          width: 24px;
+          height: 24px;
+        }
+        p{
+          letter-spacing: 13px;
+          color:#ffffff;
+          font-weight: bold;
+        }
+      }
+      .ft-title{
+        color:#ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 15px;
+      }
+      .ft-content{
+        p{
+          color:#ffffff;
+        }
+        img{
+          width: 192px; height: 14px;
+          object-fit: cover;
+        }
+      }
+      .sb-content{
+        p{
+          color:#ffffff;
+        }
+        img{
+          width: 86px;height: 14px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+
+//首頁 使用者分享
+.userShare{
+  background: radial-gradient(circle closest-side at center, #000000, #28085C);
+  background-size: cover;
+  padding: 163px 0 ;
+  height: 934px;
+  overflow: hidden;
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+  }
+  .user-title{
+    display: flex;
+    h3{
+      color:#ffffff;
+      letter-spacing: 20px;
+      font-size: 48px;
+      font-weight: bold;
+      margin-right: 20%;
+    }
+    p{
+      color:#ffffff;
+    }
+  }
+  .material-symbols-outlined{
+    max-width: 80px;
+    max-height: 80px;
+    color:#ffffff;
+  }
+}
+
+//首頁 swiper滑動區
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  padding:20px;
+  flex-direction:column;
+  width:416px; height:416px;
+  text-align: start;
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color:#ffffff;
+  h3{
+    display: inline-flex;
+    span{
+      margin: 0 10px;
+    }
+  }
+}
+.swiperBottom{
+  text-align:start;
+  display:flex;
+  margin:auto 22% 0 0; padding:0;
+  .material-symbols-outlined{
+    width: 16px;height: 16px;
+    margin-right:15px;
+  }
+  p{
+    margin-bottom: 0;
+    display: flex;
+  }
+}
+
+.swiper-scrollbar-drag {
+  background-color: #ffffff;
+}
+.swiper-scrollbar {
+  background-color: #000 ;
+}
+
+.swiperBottomWord{
+  position: relative;
+  background:#28085C;
+  .background-word{
+    p{
+      position: absolute;
+      top:-193px; left:-485px;
+      font-size: 400px;
+      font-style:italic;
+      font-family: 'Shrikhand';
+      color:#300871;
+      z-index: 1;
+    };
+  }
+  p{
+    position: absolute;
+    top: 27px; left: 92px;
+    margin-top: auto;
+    color:#ffffff;
+    z-index: 3;
+  }
+}
+
+@include iphone{
+  .userShare{
+    padding:20px 0 20px 0px;
+    flex-direction: column;
+    height: 1772px;
+    .user-title{
+      flex-direction: column;
+      h3{
+        font-size: 40px;
+        letter-spacing: 29px;
+      }
+    }
+    .material-symbols-outlined{
+      max-width: 80px; max-height: 80px;
+    }
+  }
+
+  .moblieList{
+    padding: 0;
+    .mlist{
+      display: flex;
+      flex-direction: column;
+      padding:20px 17px;
+      height: 351px;
+    }
+    .list-header{
+      color:#ffffff;
+      margin-bottom: 40px;
+      h3{
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+      }
+      .wspot{
+        max-width: 8px; max-height: 8px;
+        margin: 0 15px;
+        justify-content: center;
+        display: flex;
+      }
+    }
+    .list-footer{
+      display: flex;
+      margin-top: auto;
+      p{
+        margin-left: 10px;
+      }
+    }
+  }
+  .swiperBottomWord{
+    position: relative;
+    .background-word{
+      p{
+        font-size:128px;
+        position: absolute;
+        top: -79px; left: -224px;
+      }
+    }
+  }
+}
+
+
+//首頁 聯絡我們
+.hcontact{
+  background: #1F0F39;
+  padding: 80px;
+  .container{
+    margin: 0 auto;
+    max-width: 1296px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .infoTitle{
+    h4{
+      font-size: 48px;
+      font-weight: bold;
+      color:#ffffff;
+      line-height: 72px;
+      letter-spacing: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .contIcon{
+    width: 12px; height: 12px;
+    margin-right: 20px;
+    color:#ffffff;
+  }
+  .whiteLine{
+    color:#ffffff;
+    border-radius: 10px;
+    width: 124px;
+    border: 12px solid #ffffff;
+  }
+  .userInfo{
+    width: 746px;
+   .infoIcon{
+      //width: 80px;height: 80px;
+      font-size: 80px;
+      color:#ffffff;
+    }
+  }
+  input, textarea{
+    border-radius: 0%;
+  }
+  label{
+    font-weight: bold;
+  }
+  textarea{
+    resize: none;
+  }
+  .form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .fbtn{
+      padding:10px;
+      background: #6E01F8;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0%;
+      color:#ffffff;
+      &:hover{
+        background: #7000FF;
+      }
+    }
+  }
+}
+
+@include iphone{
+  .hcontact{
+    padding: 30px 0;
+  }
+  .container{
+    flex-direction: column;
+    .infoTitle{
+      h4{
+        font-size: 40px;
+        letter-spacing: 28px;
+      }
+    }
+    .whiteLine{
+      border: 8px solid #ffffff;
+    }
+    .spot-icons{
+      align-items: center;
+      .contIcon{
+        width: auto; height: auto;
+      }
+    }
+    .userInfo{
+      max-width: 100%;
+      .fbtn{
+        border-radius: 4px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+//首頁 四張hover人物卡片
+
+//diane
+.dianeBlack{
+  padding: 24px 12px;
+  text-decoration: none;
+  background: #000;
+  background-blend-mode: darken;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  @media (min-width: 768px) {
+    padding: 24px 40px 56px;
+  }
+  &:hover {
+    background-color: rgb(0 0 0 / .5);
+  }
+}
+//felix
+.felixBlack{
+  padding: 24px 12px;
+  text-decoration: none;
+  background: #000;
+  background-blend-mode: darken;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  @media (min-width: 768px) {
+    padding: 24px 40px 56px;
+  }
+  &:hover {
+    background-color: rgb(0 0 0 / .5);
+  }
+}
+//karina
+.karinaBlack{
+  padding: 24px 12px;
+  text-decoration: none;
+  background: #000;
+  background-blend-mode: darken;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_verticalgle.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  @media (min-width: 768px) {
+    padding: 24px 40px 56px;
+  }
+  &:hover {
+    background-color: rgb(0 0 0 / .5);
+  }
+}
+//karina
+.VitoBlack{
+  padding: 24px 12px;
+  text-decoration: none;
+  background: #000;
+  background-blend-mode: darken;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+  @media (min-width: 768px) {
+    padding: 24px 40px 56px;
+  }
+  &:hover {
+    background-color: rgb(0 0 0 / .5);
+  }
+}
+@include iphone{
+  .blackCards{
+    ol{
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
