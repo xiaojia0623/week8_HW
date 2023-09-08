@@ -312,7 +312,7 @@ $primary-200: #7000FF;
 $primary-300: #6E01F8;
 $primary-400: #380C7E;
 // ...其餘紫色
-
+$primary-dark: #11002d;
 $custom-colors: (
   'primary-100': $primary-100,
   'primary-200': $primary-200,
@@ -322,7 +322,7 @@ $custom-colors: (
 
 
 // scss-docs-start theme-colors-map
-/*$theme-colors: (
+$theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -331,10 +331,10 @@ $custom-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark
-) !default;*/
+) !default;
 
 // 合併到色彩設定
-$theme-colors: map-merge($theme-colors, $custom-colors) !default;
+$theme-colors: map-merge($theme-colors, $custom-colors);
 // scss-docs-end theme-colors-map
 
 // Characters which are escaped by the escape-svg function

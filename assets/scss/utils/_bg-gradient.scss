@@ -1,3 +1,5 @@
+$start-color: $primary;
+$end-color: $secondary;
 // 水平方向的漸層
 @mixin gradient-x($start-color: $primary, $end-color: $secondary) {
     background-image: linear-gradient(to right, $start-color, $end-color);

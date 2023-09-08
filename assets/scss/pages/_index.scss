@@ -38,6 +38,8 @@
   }
 }
 
+
+
 @include iphone{
   .banner{
     height: 1846px;
@@ -129,7 +131,12 @@
     object-fit: cover;
   }
 }
-
+@include pad{
+  .fourCard{
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
 
 @include iphone{
   .fourCard{
