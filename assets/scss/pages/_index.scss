@@ -133,8 +133,53 @@
 }
 @include pad{
   .fourCard{
-    flex-direction: row;
+    flex-direction: column;
     margin: 0 auto;
+    max-width: 100%;
+  }
+  .outside{
+    max-width: 100%;
+    .card{
+      width: 100%;
+      .card-diane{
+        width: 100%;
+        img{
+          height: 676px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .mobile-text{
+    text-align: center;
+  }
+  .middleCard-section{
+    width: 100%;
+  }
+  .middle-card{
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    .card-felix, .card-karina{
+      width: 100%;
+      img{
+        height: 676px;
+        width: 100%;
+      }
+    }
+  }
+  .vitoCard{
+    width: 100%;
+    .lastestCard{
+      width: 100%;
+    }
+    .card-vito{
+      width: 100%;
+      img{
+        height: 676px;
+        width: 100%;
+      }
+    }
   }
 }
 
